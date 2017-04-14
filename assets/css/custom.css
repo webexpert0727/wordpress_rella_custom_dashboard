@@ -1,0 +1,7 @@
+/*
+ * Name:        Theme Custom
+ * Description: Add here all your CSS customizations
+ */
+body > nav.navbar {
+		margin-bottom: 0;
+}

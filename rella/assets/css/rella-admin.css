@@ -1,0 +1,1407 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+/**********************
+General Styling
+**********************/
+
+.rella-wrap *, .rella-wrap *:before, .rella-wrap *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body.toplevel_page_rella, body.rella_page_rella-plugins {
+	background: #fff;
+}
+
+
+/**********************
+Some shortcodes
+**********************/
+
+.text-gradient {
+	color: #00acaa;
+	background: -webkit-linear-gradient(90deg, #00acaa 0%, #0091bb 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, right top, from(#0091bb), to(#00acaa));
+	background: -webkit-linear-gradient(left, #0091bb 0%, #00acaa 100%);
+	background: linear-gradient(90deg, #0091bb 0%, #00acaa 100%);
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/**********************
+Rella Labels
+**********************/
+
+.rella-label {
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 30px;
+	padding: 3px 20px 4px;
+	vertical-align: middle;
+	color: #111;
+	border-radius: 4px;
+	background-color: #f2ca41;
+}
+
+.rella-info {
+	margin-bottom: 70px;
+	padding: 22px 15px;
+	border-radius: 5px;
+}
+
+.rella-info h4 {
+	margin-bottom: 0;
+}
+
+.rella-info i {
+	font-size: 25px;
+}
+
+
+/**********************
+Rella Rules
+**********************/
+
+.rella-wrap {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2em;
+	max-width: 1400px;
+	margin: 40px 6.5%;
+	color: #a2a2a2;
+}
+
+.rella-wrap p {
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.rella-wrap a {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	text-decoration: none;
+	color: #000;
+}
+
+.rella-wrap a:hover {
+	color: #16a085;
+}
+
+.rella-wrap .h2, .rella-wrap h2, .rella-wrap .h6, .rella-wrap h6 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+
+.rella-wrap .h1, .rella-wrap h1 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	letter-spacing: .02em;
+	color: #111;
+}
+
+.rella-wrap .h3, .rella-wrap h3 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+
+.rella-wrap .h4, .rella-wrap h4 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+
+.rella-wrap .h5, .rella-wrap h5 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+	margin-top: 0;
+	letter-spacing: .02em;
+	color: #111;
+}
+
+.rella-wrap input[type=text], .rella-wrap input[type=email], .rella-wrap input[type=url], .rella-wrap input[type=password], .rella-wrap input[type=number], .rella-wrap input[type=tel], .rella-wrap input[type=text], .rella-wrap input[type=submit], .rella-wrap button[type=submit] {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 490px;
+	padding: 15px 25px;
+	-webkit-transition: border .3s ease;
+	transition: border .3s ease;
+	letter-spacing: .02em;
+	border: none;
+	border-radius: 3px;
+}
+
+.rella-wrap input[type=text]:focus, .rella-wrap input[type=email]:focus, .rella-wrap input[type=url]:focus, .rella-wrap input[type=password]:focus, .rella-wrap input[type=number]:focus, .rella-wrap input[type=tel]:focus, .rella-wrap input[type=text]:focus, .rella-wrap input[type=submit]:focus, .rella-wrap button[type=submit]:focus {
+	outline: none;
+}
+
+.rella-wrap input[type=text], .rella-wrap input[type=email], .rella-wrap input[type=url], .rella-wrap input[type=password], .rella-wrap input[type=number], .rella-wrap input[type=tel] {
+	color: #000;
+	border: 1px solid #e6e6e6;
+	background-color: #f3f3f3;
+}
+
+.rella-wrap input[type=text]:focus, .rella-wrap input[type=email]:focus, .rella-wrap input[type=url]:focus, .rella-wrap input[type=password]:focus, .rella-wrap input[type=number]:focus, .rella-wrap input[type=tel]:focus {
+	border-color: #aaa;
+}
+
+.rella-wrap input[type=submit], .rella-wrap button[type=submit] {
+	font-size: 14px;
+	padding: 18px 25px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.rella-wrap input[type=submit] i, .rella-wrap button[type=submit] i {
+	margin-left: 3px;
+}
+
+.rella-wrap input[type=submit]:hover, .rella-wrap button[type=submit]:hover {
+	-webkit-transform: translateY(-1px);
+	-ms-transform: translateY(-1px);
+	    transform: translateY(-1px);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.rella-wrap input[type=submit]:active, .rella-wrap button[type=submit]:active {
+	-webkit-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	    transform: translateY(1px);
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+	        box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+}
+
+.rella-wrap .rella-input-container {
+	margin-bottom: 20px;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: ' ';
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.rella-left {
+	float: left;
+}
+
+.rella-right {
+	float: right;
+}
+
+.rella-align-center {
+	text-align: center !important;
+}
+
+.bg-seashell {
+	background-color: #f3f3f3;
+}
+
+.color-white {
+	color: #fff !important;
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.rella-clearlist {
+	padding: 0;
+	list-style: none;
+}
+
+.rella-clearlist li {
+	margin-right: 20px;
+}
+
+.rella-button {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.rella-button i {
+	font-size: 1em;
+	display: inline-block;
+	-webkit-transition: -webkit-transform .3s ease;
+	transition: -webkit-transform .3s ease;
+	transition: transform .3s ease;
+	transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.rella-button:hover i {
+	-webkit-transform: translateX(3px);
+	-ms-transform: translateX(3px);
+	    transform: translateX(3px);
+}
+
+.rella-badge {
+	font-size: 14px;
+	float: right;
+	width: 165px;
+	margin: 12px 0 0;
+	padding: 45px 0;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #23282d;
+}
+
+.rella-badge .text {
+	font-weight: 300;
+	line-height: 1;
+}
+
+.rella-badge .version {
+	font-size: 42px;
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 10px;
+	letter-spacing: 0;
+}
+
+.rella-header.align-center {
+	text-align: center;
+}
+
+.rella-header p {
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 1.6em;
+	min-height: 60px;
+	margin: 1em 0;
+	color: #555d66;
+}
+
+.rella-header .lead {
+	margin-right: 200px;
+}
+
+
+/**********************
+Extensions List
+**********************/
+
+.rella-extensions {
+	font-size: 14px;
+	line-height: 2;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: #999;
+}
+
+.rella-extensions:before, .rella-extensions:after {
+	display: table;
+	content: '';
+}
+
+.rella-extensions:after {
+	clear: both;
+}
+
+.rella-extension {
+	float: left;
+	width: -webkit-calc(33.3333333% - 30px);
+	width: calc(33.3333333% - 30px);
+	margin-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+}
+
+.rella-extension-inner {
+	padding: 30px 0 0;
+	border: 5px solid #dedede;
+	background-color: #fff;
+}
+
+.rella-extensions-title {
+	font-size: 22px;
+	font-weight: 700;
+	margin: .5em 0;
+	color: #111;
+}
+
+.rella-extension-status {
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 2px 30px;
+	color: #555;
+	border: 1px solid #ecf0f1;
+}
+
+.rella-extension-descr {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.rella-extension-footer {
+	margin-top: 1.5em;
+}
+
+.rella-extension-footer a {
+	font-weight: 700;
+	display: block;
+	padding: 15px 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: #2c3e50;
+	background-color: #ecf0f1;
+}
+
+.rella-extension-footer a:hover {
+	color: #fff;
+	background-color: #2ecc71;
+}
+
+
+/**********************
+Rella Register Form
+**********************/
+
+.rella-register {
+	text-align: center;
+}
+
+.rella-register>h1 {
+	text-align: left;
+}
+
+.rella-register header {
+	font-size: 20px;
+	padding: 1px;
+	text-align: center;
+	letter-spacing: .02em;
+	border-radius: 3px 3px 0 0;
+}
+
+.rella-register-form {
+	padding: 3.5% 20%;
+	border: 3px solid #f3f3f3;
+	border-radius: 2px;
+}
+
+.rella-register-form .title {
+	text-align: center;
+}
+
+.rella-register-form .title figure {
+	width: 70px;
+	margin: 0 auto 0;
+}
+
+.rella-register-form .title h2 {
+	font-size: 35px;
+	margin-top: .7em;
+	margin-bottom: 1em;
+}
+
+.rella-register-form h5 {
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+
+.rella-register-form .generate-apikey {
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #0091bb;
+}
+
+.rella-register-form .generate-apikey i {
+	margin-left: 5px;
+}
+
+
+/**********************
+Rella Dashboard
+**********************/
+
+.rella-dashboard-header {
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+}
+
+.rella-dashboard-header .rella-inline-nav li {
+	margin-bottom: 0;
+}
+
+.rella-dashboard-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	padding: 35px 70px;
+	background-color: #f9f9f9;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+.rella-dashboard-title h1 {
+	margin-bottom: 0;
+}
+
+.rella-dashboard-title p {
+	margin-bottom: 0;
+}
+
+.rella-dashboard-title figure {
+	margin: 0;
+}
+
+.rella-dashboard-title .rella-left {
+	-webkit-box-ordinal-group: 0;
+	-ms-flex-order: -1;
+	-webkit-order: -1;
+	        order: -1;
+}
+
+.rella-dashboard-title .rella-right {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	        order: 1;
+}
+
+.rella-inline-nav {
+	margin: 0;
+	border-top: 1px solid #dbdbdb;
+}
+
+.rella-inline-nav li {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	position: relative;
+	margin-right: 0;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.rella-inline-nav li:before {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	content: '';
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	background: -webkit-linear-gradient(315deg, #00aca9 0%, #0092bb 100%);
+	background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+}
+
+.rella-inline-nav li a {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 7px 50px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	border-right: 1px solid #dbdbdb;
+}
+
+.rella-inline-nav li i {
+	font-size: 15px;
+	margin: 0 5px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.rella-inline-nav li i.fa-youtube-play {
+	color: #0091bb;
+}
+
+.rella-inline-nav li.rella-left:nth-last-child(2) a {
+	border-right: none;
+}
+
+.rella-inline-nav li.rella-right a {
+	border-right: none;
+	border-left: 1px solid #dbdbdb;
+}
+
+.rella-inline-nav li:hover, .rella-inline-nav li.is-active {
+	border-color: transparent;
+}
+
+.rella-inline-nav li:hover:before, .rella-inline-nav li.is-active:before {
+	opacity: 1;
+}
+
+.rella-inline-nav li:hover a, .rella-inline-nav li.is-active a {
+	color: #fff;
+}
+
+.rella-inline-nav li:hover a i, .rella-inline-nav li.is-active a i {
+	color: #fff;
+}
+
+.rella-cards-container {
+	margin: 0 -15px;
+	padding: 0;
+	list-style: none;
+}
+
+.rella-card {
+	position: relative;
+	float: left;
+	width: -webkit-calc(33.3333333% - 30px);
+	width: calc(33.3333333% - 30px);
+	margin-right: 15px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #f3f3f3;
+}
+
+.rella-card:before {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	content: '';
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	background: -webkit-linear-gradient(315deg, #00aca9 0%, #0092bb 100%);
+	background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+}
+
+.rella-card p {
+	font-size: 1em;
+	line-height: 2em;
+	padding-right: 7%;
+	padding-left: 7%;
+}
+
+.rella-card:hover:before {
+	opacity: 1;
+}
+
+.rella-card-inner {
+	position: relative;
+	z-index: 2;
+	margin: 5px;
+	padding: 35px 0 0;
+	background-color: #fff;
+}
+
+.rella-icon-container {
+	font-size: 35px;
+	margin-bottom: 23px;
+}
+
+.rella-icon-container img {
+	width: 100%;
+	height: auto;
+}
+
+.rella-status {
+	line-height: 1.5;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: #cbcaca;
+	border-radius: 2px;
+	background-color: #cbcaca;
+}
+
+.rella-status span {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	margin: 1px;
+	padding: 1px 10px;
+	background-color: #fff;
+}
+
+.rella-card-footer {
+	position: relative;
+	margin-top: 40px;
+	background-color: #f3f3f3;
+}
+
+.rella-card-footer:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	content: '';
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	background: -webkit-linear-gradient(315deg, #00aca9 0%, #0092bb 100%);
+	background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+}
+
+.rella-card-footer .rella-button {
+	position: relative;
+	z-index: 2;
+	display: block;
+	padding: 12px 10px 7px;
+}
+
+.rella-card-footer .rella-button+.rella-button {
+	border-left: 1px solid rgba(0, 0, 0, .05);
+}
+
+.rella-card:hover .rella-card-footer:before {
+	opacity: 1;
+}
+
+.rella-card:hover .rella-card-footer .rella-button {
+	color: #fff;
+}
+
+.rella-card:hover .rella-card-footer .rella-button+.rella-button {
+	border-color: rgba(255, 255, 255, .15);
+}
+
+.rella-author {
+	color: #919191;
+}
+
+.rella-author a {
+	color: #919191;
+}
+
+.rella-card-demo .rella-card-inner {
+	margin: 3px;
+	padding-top: 0;
+}
+
+.rella-card-demo .rella-icon-container {
+	margin: -3px -3px 23px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.rella-card-demo .rella-card-footer {
+	margin-top: 30px;
+}
+
+.rella-card-demo .rella-button {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+
+/**********************
+Tabs
+**********************/
+
+.rella-tab-pane {
+	padding-top: 70px;
+}
+
+.rella-tab-is-active {
+	display: block;
+}
+
+
+/**********************
+Notifications
+**********************/
+
+.wrap .notice {
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.wrap .notice p {
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.wrap .notice.notice-alt {
+	color: #777;
+}
+
+
+/**********************
+STATS
+**********************/
+
+.rella-extension.active .rella-extension-inner {
+	border-color: #2ecc71;
+}
+
+.rella-extension.active .rella-extension-status {
+	color: #fff;
+	border-color: #2ecc71;
+	background-color: #2ecc71;
+}
+
+.rella-extension.active .rella-extensions-validate {
+	color: #fff;
+	background-color: #2ecc71;
+}
+
+.rella-status-is-active {
+	color: #0091bb;
+	background: -webkit-linear-gradient(315deg, #00aca9 0%, #0092bb 100%);
+	background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+}
+
+.rella-card-is-active:before {
+	opacity: 1;
+}
+
+.rella-card-is-active .rella-card-footer:before {
+	opacity: 1;
+}
+
+.rella-card-is-active .rella-card-footer .rella-button {
+	color: #fff;
+}
+
+.rella-card-is-active .rella-card-footer .rella-button+.rella-button {
+	border-color: rgba(255, 255, 255, .15);
+}
+
+.rella-card-is-active .rella-status {
+	color: #0091bb;
+	background: -webkit-linear-gradient(315deg, #00aca9 0%, #0092bb 100%);
+	background: linear-gradient(135deg, #00aca9 0%, #0092bb 100%);
+}
+
+
+/**********************
+MEDIA QUERIES
+**********************/
+
+@media all and (max-width: 1500px) {
+	.rella-inline-nav li a {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+
+@media all and (max-width: 1360px) {
+	.rella-inline-nav li a {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media all and (max-width: 1199px) {
+	.rella-inline-nav li a {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.rella-extension {
+		width: -webkit-calc(50% - 30px);
+		width: calc(50% - 30px);
+	}
+	.rella-card {
+		width: -webkit-calc(100% - 30px);
+		width: calc(100% - 30px);
+	}
+	.rella-wrap input[type=text], .rella-wrap input[type=email], .rella-wrap input[type=url], .rella-wrap input[type=password], .rella-wrap input[type=number], .rella-wrap input[type=tel], .rella-wrap input[type=text], .rella-wrap input[type=submit], .rella-wrap button[type=submit] {
+		width: 100%;
+	}
+	.rella-register-form {
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.rella-dashboard-title {
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+	}
+	.rella-dashboard-title figure {
+		margin-top: 30px;
+	}
+	.rella-dashboard-title .rella-left, .rella-dashboard-title .rella-right {
+		float: none !important;
+	}
+	.rella-inline-nav li {
+		display: block;
+		float: none !important;
+		width: 100%;
+	}
+	.rella-inline-nav li a {
+		display: block;
+		border: none !important;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.rella-extension {
+		width: -webkit-calc(100% - 30px);
+		width: calc(100% - 30px);
+	}
+}
+
+
+/*Demo Popup*/
+
+.rella-popup {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.rella-popup-body {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 50%;
+	height: 95%;
+	margin: auto;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 13px 80px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 13px 80px rgba(0, 0, 0, 0.4);
+}
+
+.rella-popup-close {
+	font-size: 36px;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	z-index: 9;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.rella-popup-content-inner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 2.2% 1.8%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-perspective: 1200px;
+	        perspective: 1200px;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+.rella-popup-content-inner:before,
+.rella-popup-content-inner:after {
+	content: '';
+	display: table;
+}
+.rella-popup-content-inner:after {
+	clear: both;
+}
+
+.rella-huge-text {
+	display: block;
+	height: 28%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #f5f5f5;
+}
+.rella-huge-text h3 {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	font-size: 250px;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: -0.15em;
+	color: #fff;
+	text-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 0 15px 45px rgba(0, 0, 0, 0.05);
+	-webkit-transform: translate3d(-32.4%, 24%, 0);
+	        transform: translate3d(-32.4%, 24%, 0);
+}
+
+.rella-popup-left {
+	position: relative;
+	margin-left: 0;
+	border-radius: 5px;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-perspective: 1200px;
+	        perspective: 1200px;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.rella-popup-left .demo-image-blur {
+	width: 80%;
+	height: auto;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -40%;
+	opacity: 0.9;
+	-webkit-filter: blur(35px) brightness(1.1) contrast(1.1);
+	        filter: blur(35px) brightness(1.1) contrast(1.1);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.no-cssfilters .rella-popup-left .demo-image-blur {
+	display: none;
+}
+
+.rella-popup-left .demo-image {
+	position: relative;
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: auto;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 13px 40px rgba(0, 0, 0, 0.12);
+	        box-shadow: 0 13px 40px rgba(0, 0, 0, 0.12);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.rella-popup-left:hover .demo-image-blur {
+	opacity: 0.7;
+	-webkit-filter: blur(25px) brightness(1.1) contrast(1.1);
+	        filter: blur(25px) brightness(1.1) contrast(1.1);
+}
+.rella-popup-left:hover .demo-image {
+	-webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rella-popup-right .rella-import-demo,
+.rella-popup-left .live-demo {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	font-family: 'Karla', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	-webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+	transition: opacity 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+	transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+	transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	opacity: 0;
+	color: #fff;
+	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translate3d(-50%, -30%, 0);
+	        transform: translate3d(-50%, -30%, 0);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-perspective: 1200px;
+	        perspective: 1200px;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+
+.rella-popup-right .rella-import-demo span,
+.rella-popup-left .live-demo span {
+	display: inline-block;
+	padding: 1.65em 4em;
+	border-radius: 3px;
+	background: rgba(244,41,88,1);
+	background: -webkit-linear-gradient(315deg, rgba(244,41,88,1) 0%, rgba(232,65,39,1) 100%);
+	background: linear-gradient(135deg, rgba(244,41,88,1) 0%, rgba(232,65,39,1) 100%);
+}
+
+.cssfilters .rella-popup-right .rella-import-demo:before,
+.cssfilters .rella-popup-left .live-demo:before {
+	content: '';
+	display: inline-block;
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	top: 55%;
+	left: 10%;
+	z-index: -1;
+	-webkit-filter: blur(15px) brightness(1.1) contrast(1.5);
+	        filter: blur(15px) brightness(1.1) contrast(1.5);
+	background: rgba(244,41,88,1);
+	background: -webkit-linear-gradient(315deg, rgba(244,41,88,1) 0%, rgba(232,65,39,1) 100%);
+	background: linear-gradient(135deg, rgba(244,41,88,1) 0%, rgba(232,65,39,1) 100%);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.rella-popup-right .rella-import-demo:hover,
+.rella-popup-left .live-demo:hover {
+	-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.cssfilters .rella-popup-right .rella-import-demo:hover:before,
+.cssfilters .rella-popup-left .live-demo:hover:before {
+	-webkit-transform: translateY(-10%);
+	    -ms-transform: translateY(-10%);
+	        transform: translateY(-10%);
+	-webkit-filter: blur(10px) brightness(1.1) contrast(1.5);
+	        filter: blur(10px) brightness(1.1) contrast(1.5);
+}
+
+.rella-popup-left:hover .live-demo {
+	opacity: 1;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	        transform: translate3d(-50%, -50%, 0);
+}
+
+
+.rella-popup-right {
+	width: 70%;
+	margin: 5em auto;
+	text-align: center;
+}
+
+.rella-popup-right h3,
+.rella-popup-right h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 33px;
+	font-weight: 700;
+	line-height: 33px;
+	margin: 0;
+	margin-bottom: 0.5em;
+	text-transform: capitalize;
+	color: #000;
+}
+
+.rella-popup-right h4 {
+	font-size: 24px;
+	line-height: 22px;
+}
+
+.rella-popup-right p {
+	margin: 1.5em;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 2em;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	color: #a5a5a5;
+}
+
+.rella-popup-right .import-option-group {
+	display: block;
+	margin-left: -20%;
+	margin-right: -20%;
+}
+.rella-popup-right .import-option {
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 25px;
+}
+.rella-popup-right .import-option:last-child {
+	margin-right: 0;
+}
+
+.rella-popup-right .import-option input {
+	display: none;
+}
+
+.rella-popup-right .import-option label {
+	display: inline-block;
+	color: #000;
+}
+
+.rella-popup-right .import-option .option-icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 7px;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 400;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 50em;
+	background-color: #fff;
+	color: #e84227;
+	/*border: 0.5px solid #e84227;*/
+	-webkit-box-shadow: 0 10px 20px rgba(232, 66, 39, 0.2), 0 5px 10px rgba(232, 66, 39, 0.2);
+	        box-shadow: 0 10px 20px rgba(232, 66, 39, 0.2), 0 5px 10px rgba(232, 66, 39, 0.2);
+}
+.rella-popup-right .import-option .option-icon:before {
+	content: '\f00d';
+}
+
+.rella-popup-right .import-option input:checked+label i.option-icon {
+	color: #27e859;
+	border-color: #27e859;
+	-webkit-box-shadow: 0 10px 20px rgba(39, 232, 89, 0.2), 0 5px 10px rgba(39, 232, 89, 0.2);
+	        box-shadow: 0 10px 20px rgba(39, 232, 89, 0.2), 0 5px 10px rgba(39, 232, 89, 0.2);
+}
+.rella-popup-right .import-option input:checked+label i.option-icon:before {
+	content: '\f00c';
+}
+
+.rella-agree-box {
+	margin-bottom: 15px;
+}
+
+.rella-popup-right .rella-import-demo {
+	margin-left: 15px;
+	position: relative;
+	top: auto;
+	left: auto;
+	opacity: 1;
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	opacity: 0.5;
+	pointer-events: none;
+}
+.rella-popup-right .rella-import-demo span,
+.cssfilters .rella-popup-right .rella-import-demo:before {
+	background: -webkit-linear-gradient(315deg, #54f429 0%, #27e874 100%);
+	background: linear-gradient(135deg, #54f429 0%, #27e874 100%);
+}
+
+.rella-popup-right hr {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.rella-popup-right .checked + .rella-import-demo {
+	opacity: 1;
+	pointer-events: all;
+}
+
+@-webkit-keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+@keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+}
+
+.rella-shake {
+	display: inline-block;
+	-webkit-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.rella-import-modules {
+	margin-top: 20px;
+	font-size: 16px;
+	color: #bbb;
+}
+
+.rella-import-modules li {
+	margin-bottom: 5px;
+}
+
+.rella-import-modules i {
+	margin-right: 7px;
+}
+
+.rella-import-modules li.done {
+	color: #333
+}
+
+.rella-import-modules li.done i {
+	color: #4bbb4b;
+}
+
+.rella-import-modules li.loader i:before {
+	display: none
+}
+
+.rella-import-modules li.loader i:after {
+	background: url(../img/loader.gif) no-repeat center;
+	background-size: 16px 16px;
+	content: " ";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+.rella-popup-right .success-container {
+    background: #46b450;
+}
+.rella-popup-right .error-container {
+    background: #ff6161;
+}
+
+.rella-popup-right .success-container,
+.rella-popup-right .error-container {
+	margin: 20px 0;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.rella-popup-right .success-container p,
+.rella-popup-right .error-container p {
+	color: #fff;
+	margin: 0;
+}
+
+
+@media screen and ( max-width: 1366px ) {
+
+	.rella-popup-body {
+		width: 70%;
+	}
+	.rella-huge-text h3 {
+		-webkit-transform: translate3d(-23%, 25%, 0);
+		        transform: translate3d(-23%, 25%, 0);
+	}
+}
+
+@media screen and ( max-width: 1199px ) {
+
+	.rella-popup-body {
+		width: 90%;
+	}
+}
+
+@media screen and ( max-width: 991px ) {
+
+	.rella-popup-body {
+		width: 100%;
+		height: 100%;
+	}
+	.rella-popup-left .demo-image,
+	.rella-popup-left .demo-image-blur {
+		width: 90%;
+	}
+	.rella-popup-left .demo-image-blur {
+		margin-left: -45%;
+	}
+	.rella-popup-right {
+		width: 80%;
+	}
+	.rella-huge-text {
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+
+	.rella-popup-body {
+		width: 100%;
+		height: 100%;
+	}
+	.rella-popup-right .import-option-group {
+		margin-left: -15%;
+		margin-right: -15%;
+	}
+	.rella-popup-right .rella-import-demo,
+	.rella-popup-left .live-demo {
+		font-size: 10px;
+	}
+	.rella-popup-right p {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
